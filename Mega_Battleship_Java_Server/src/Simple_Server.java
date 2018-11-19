@@ -4,12 +4,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
-public class SimpleServer {
+public class Simple_Server {
 
     public static void main(String[] args) {
 
         try {
-
 
             ServerSocket socketServer = new ServerSocket(9888, 5);
             while (true) {

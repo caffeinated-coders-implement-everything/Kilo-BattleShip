@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Game {
 
     Scanner scanner = new Scanner(System.in);
-    private int boardLength = 10;
-    private int boardWidth = 10;
+    private int boardLength = 20;
+    private int boardWidth = 20;
     private int[][] playerGameBoard = new int [boardLength][boardWidth];
 
     // this method will query the server for an updated gameboard.
