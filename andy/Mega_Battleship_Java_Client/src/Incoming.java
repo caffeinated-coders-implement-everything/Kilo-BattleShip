@@ -18,4 +18,5 @@ public class Incoming {
     public int getY() {
         return y;
     }
+
 }

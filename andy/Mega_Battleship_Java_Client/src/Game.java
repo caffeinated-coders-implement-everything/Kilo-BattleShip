@@ -18,6 +18,9 @@ public class Game implements Serializable {
     // this method will query the server for an updated gameboard.
     public void updateBoard(int x, int y){
 
+
+        Outgoing serverReply = new Outgoing();
+
         try
         {
             Socket client = new Socket(_ipAddress, 9888);
@@ -36,7 +39,7 @@ public class Game implements Serializable {
             objectOutput.flush();
 
             ObjectInputStream objectInput = new ObjectInputStream(client.getInputStream());
-            Outgoing serverReply  = (Outgoing) objectInput.readObject();
+            serverReply  = (Outgoing) objectInput.readObject();
 
             output.close();
             input.close();
@@ -50,17 +53,8 @@ public class Game implements Serializable {
             e.printStackTrace();
         }
 
-
-
-    // Not only should this method get a 2D array from the server, but also a boolean for whether
-        // there is a gameover or a win/loss, and a hit/miss.
-
-        for(int rows = 0; rows < boardLength; rows++){
-            for(int columns = 0; columns < boardWidth; columns++){
-                //take server input and load it into 2D array.
-                //playerGameBoard[rows][columns] = server input
-            }
-        }
+        playerGameBoard = serverReply.getPlayerGameBoard();
+        opponentGameBoard = serverReply.get_opponentGameBoard();
     }
 
     // this method moves the cursor

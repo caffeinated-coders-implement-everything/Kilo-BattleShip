@@ -18,6 +18,10 @@ public class Outgoing {
         return _playerGameBoard;
     }
 
+    public int[][] get_opponentGameBoard() {
+        return _playerGameBoard;
+    }
+
     public void setPlayerScore(int playerScore) {
         this.playerScore = playerScore;
     }
