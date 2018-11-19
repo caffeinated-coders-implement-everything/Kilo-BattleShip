@@ -1,1 +1,1 @@
-# Mega-BattleShip
+# Kilo-BattleShip
