@@ -2,6 +2,7 @@ import java.net.Socket;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class Main {
 
@@ -9,7 +10,12 @@ public class Main {
 
     public static void main(String[] args){
 
-        Game game = new Game();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter the IP address of the server");
+        String ipAddress = scanner.nextLine();
+
+        Game game = new Game(ipAddress);
 
         try {
             Socket client = new Socket("localhost", 9888);
@@ -29,7 +35,7 @@ public class Main {
             serverConnection = false;
         }
 
-        game.updateBoard();
+        game.updateBoard(0,0);
 
     }
 }

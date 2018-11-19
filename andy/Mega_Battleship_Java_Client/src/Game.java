@@ -1,16 +1,58 @@
 import java.util.Scanner;
+import java.io.*;
+import java.net.Socket;
 
-public class Game {
+public class Game implements Serializable {
 
     Scanner scanner = new Scanner(System.in);
     private int boardLength = 20;
     private int boardWidth = 20;
     private int[][] playerGameBoard = new int [boardLength][boardWidth];
+    private int[][] opponentGameBoard = new int [boardLength][boardWidth];
+    private String _ipAddress;
+
+    public Game(String ipAddress){
+        _ipAddress = ipAddress;
+    }
 
     // this method will query the server for an updated gameboard.
-    public void updateBoard(){
+    public void updateBoard(int x, int y){
 
-        // Not only should this method get a 2D array from the server, but also a boolean for whether
+        try
+        {
+            Socket client = new Socket(_ipAddress, 9888);
+            PrintWriter output = new PrintWriter(client.getOutputStream(), true);
+            BufferedReader input = new BufferedReader(new InputStreamReader(client.getInputStream()));
+            String response = input.readLine();
+            System.out.println(response);
+
+            Incoming shotsFired = new Incoming();
+            shotsFired.setX(x);
+            shotsFired.setY(y);
+
+            ObjectOutputStream objectOutput = new ObjectOutputStream(client.getOutputStream());
+            objectOutput.flush();
+            objectOutput.writeObject(shotsFired);
+            objectOutput.flush();
+
+            ObjectInputStream objectInput = new ObjectInputStream(client.getInputStream());
+            Outgoing serverReply  = (Outgoing) objectInput.readObject();
+
+            output.close();
+            input.close();
+
+            objectOutput.close();
+            objectInput.close();
+            client.close();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+
+
+    // Not only should this method get a 2D array from the server, but also a boolean for whether
         // there is a gameover or a win/loss, and a hit/miss.
 
         for(int rows = 0; rows < boardLength; rows++){
@@ -78,7 +120,7 @@ public class Game {
         x = 0;
         y = 0;
 
-        updateBoard();
+        updateBoard(x, y);
         printGameBoard(x, y);
 
     }
