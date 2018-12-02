@@ -7,13 +7,15 @@ import java.util.Random;
         Scanner scanner = new Scanner(System.in);
         private int boardLength = 20;
         private int boardWidth = 20;
-        private int[][] playerOneGameBoard;
-        private int[][] playerTwoGameBoard;
+        private Integer[][] playerOneGameBoard;
+        private Integer[][] playerTwoGameBoard;
 
 
         public Game(){
-            playerOneGameBoard = new int[boardLength][boardWidth];
-            playerTwoGameBoard = new int[boardLength][boardWidth];
+
+            playerOneGameBoard = new Integer[boardLength][boardWidth];
+
+            playerTwoGameBoard = new Integer[boardLength][boardWidth];
 
             Board playerOneBoard = new Board();
             playerOneGameBoard = playerOneBoard.createBoard();

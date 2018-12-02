@@ -5,13 +5,16 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int[][] playerOneGameBoard;
-        playerOneGameBoard = new int[20][20];
+        Integer[][] playerOneGameBoard;
+        playerOneGameBoard = new Integer[20][20];
         List<Ships> ships = new ArrayList<Ships>();
 
 
+        // calling a  new game board (needs both lines)
         Board playerOneBoard = new Board();
         playerOneGameBoard = playerOneBoard.createBoard();
+
+
         playerOneBoard.printBoard();
         ships = playerOneBoard.returnShipList();
         for (int i = 0; i < ships.size(); i++){
@@ -19,6 +22,7 @@ public class Main {
         }
 
 
+        //testing...
         System.out.print(playerOneBoard.checkForHit(playerOneGameBoard, 0 ,0, ships));
         System.out.print(playerOneBoard.checkForHit(playerOneGameBoard, 5,5, ships));
         System.out.print(playerOneBoard.checkForHit(playerOneGameBoard, 7,9, ships));

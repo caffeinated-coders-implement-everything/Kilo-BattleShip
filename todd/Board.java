@@ -1,26 +1,26 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
+import java.util.*;
 
 public class Board {
 
     private int _fleetSize;
     private  int _sunkShips;
 
-
     private int boardLength = 20;
     private int boardWidth = 20;
-    private int[][] playerGameBoard;
+    private Integer[][] playerGameBoard;
     private List<Ships> ships;
 
     public Board(){
-        playerGameBoard = new int[boardLength][boardWidth];
+        playerGameBoard = new Integer[boardLength][boardWidth];
         this.ships = new ArrayList<Ships>();
+        _fleetSize = 0;
 
 
     }
-    public int[][] createBoard (){
+    public Integer[][] createBoard (){
         Carrier carrier = new Carrier();
         ships.add(carrier);
         this.seedBoard(carrier.getSize(), carrier.getId());
@@ -56,6 +56,10 @@ public class Board {
         _sunkShips = sunkShips;
     }
 
+    public int getfleetSize(){
+        return this._fleetSize;
+    }
+
     public List<Ships> returnShipList(){
         return this.ships;
     }
@@ -69,18 +73,15 @@ public class Board {
         do {
             do{
                 x = rand.nextInt(boardWidth) - shipSize;
-
             } while (x < 0);
 
             do{
                 y = rand.nextInt(boardWidth) - shipSize;
-
             } while (y < 0);
 
             orientation = rand.nextInt(2);
 
         } while (!checkSpaceIsOpen(shipSize, orientation, x, y));
-
 
         // now actually assign the ship to the boardArray
             if (orientation == 0) {
@@ -107,7 +108,7 @@ public class Board {
         if (orientation == 0){
             int ship = shipSize + x;
             for(; x < ship; x++){
-                if (playerGameBoard[y][x] != 0){
+                if (playerGameBoard[y][x] != null){
                     spaceCheck = false;
                     break;
                 }
@@ -118,7 +119,7 @@ public class Board {
         else{
             int ship = shipSize + y;
             for(; y < ship; y++){
-                if (playerGameBoard[y][x] != 0){
+                if (playerGameBoard[y][x] != null){
                     spaceCheck = false;
                     break;
                 }
@@ -142,10 +143,10 @@ public class Board {
             //System.out.print(y);
             System.out.print(" ");
             for (int x = 0; x < playerGameBoard[y].length; x++) {
-                if (playerGameBoard[y][x] != emptyWater && playerGameBoard[y][x] != miss && playerGameBoard[y][x] > 0) {
+                if (playerGameBoard[y][x] != null && playerGameBoard[y][x] != miss && playerGameBoard[y][x] > 0) {
                     System.out.print(playerGameBoard[y][x]);
                 }
-                else if (playerGameBoard[y][x] < 0) {
+                else if (playerGameBoard[y][x] != null && playerGameBoard[y][x] < 0) {
                     int shipHit = playerGameBoard[y][x];
                     switch (shipHit){
                         case -1:
@@ -166,7 +167,7 @@ public class Board {
                     }
                 }
 
-                else if(playerGameBoard[y][x] == miss){
+                else if(playerGameBoard[y][x] != null && playerGameBoard[y][x] == miss){
                     System.out.print(0);
                 }
                 else {
@@ -181,7 +182,7 @@ public class Board {
 
     // checks for a hit/miss and updates the board array accordingly
     // currently returns a char, but needs to return true/false
-    public char checkForHit(int[][] boardArray, int x, int y, List shipList){
+    public char checkForHit(Integer[][] boardArray, int x, int y, List shipList){
         char result;    // change this to boolean
         int emptyWater = 0;
         int miss = 10;
@@ -191,7 +192,7 @@ public class Board {
         List<Ships> ships = shipList;
 
         // if the space is empty water
-        if (boardArray[y][x] == emptyWater){
+        if (boardArray[y][x] == null){
             boardArray[y][x] = miss;
              result = 'M';    // change this to false
         }
