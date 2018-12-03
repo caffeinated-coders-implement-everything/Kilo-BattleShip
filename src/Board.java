@@ -1,41 +1,42 @@
+import Ship.*;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Board implements Serializable {
+class Board implements Serializable {
 
   // NOTE: Set the size of the game boards here:
   public static final int BOARD_LENGTH = 10;
   public static final int BOARD_WIDTH = 10;
 
 
-  private int fleetSize = 0;
-  private int sunkShips = 0;
-  private int playerScore = 0;
-  private int opponentScore = 0;
-  private Integer hitPoints = null; // IMPORTANT
+  private Integer[][] playerGameBoard;
+  private Integer[][] opponentGameBoard;
+
+  private Integer hitCountdown = null; // IMPORTANT
 
   // Possible values: {null: no winner, true: player is winner, false: player is loser}
   private Boolean isWinner = null;
 
-  private Integer[][] playerGameBoard;
-  private Integer[][] opponentGameBoard;
+  private List<Ship> ships;
 
-  private List<Ships> ships;
-
+  /**
+   * Board()
+   */
   Board() {
     playerGameBoard = new Integer[BOARD_LENGTH][BOARD_WIDTH];
     opponentGameBoard = new Integer[BOARD_LENGTH][BOARD_WIDTH];
     ships = new ArrayList<>();
   }
 
+  /**
+   * Board(Board _board)
+   * @param _board Board to be copied
+   */
   Board(Board _board) {
-    fleetSize = _board.getfleetSize();
-    sunkShips = _board.getSunkShips();
-    playerScore = _board.getPlayerScore();
-    opponentScore = _board.getOpponentScore();
-    hitPoints = _board.getHitPoints();
+    hitCountdown = _board.getHitPoints();
     isWinner = _board.isWinner();
 
     playerGameBoard = _board.getPlayerGameBoard();
@@ -44,92 +45,133 @@ public class Board implements Serializable {
     ships = new ArrayList<>(_board.getShips());
   }
 
-  public synchronized void setWinner() {
-    isWinner = true;
+  /**
+   * getOpponentGameBoard()
+   * @return opponentGameBoard
+   */
+  private synchronized Integer[][] getOpponentGameBoard() {
+    return opponentGameBoard;
   }
 
-  public synchronized void setLoser() {
-    isWinner = false;
+  /**
+   * setOpponentGameBoard(Integer[][] _opponentGameBoard)
+   * @param _opponentGameBoard Opponent game board to be set
+   */
+  synchronized void setOpponentGameBoard(Integer[][] _opponentGameBoard) {
+    opponentGameBoard = _opponentGameBoard;
   }
 
-  public synchronized Boolean isWinner() {
+  /**
+   * getPlayerGameBoard()
+   * @return playerGameBoard
+   */
+  synchronized Integer[][] getPlayerGameBoard() {
+    return playerGameBoard;
+  }
+
+  /**
+   * decrementCountdown()
+   */
+  private synchronized void decrementCountdown() {
+    --hitCountdown;
+  }
+
+  /**
+   * isWinner()
+   * @return isWinner
+   */
+  synchronized Boolean isWinner() {
     return isWinner;
   }
 
-  private synchronized int getHitPoints() {
-    return hitPoints;
+  /**
+   * setWinner()
+   */
+  synchronized void setWinner() {
+    isWinner = true;
   }
 
+  /**
+   * setLoser()
+   */
+  synchronized void setLoser() {
+    isWinner = false;
+  }
+
+  /**
+   * isGameOver()
+   * @return Win condition
+   */
   synchronized boolean isGameOver() {
-    return hitPoints == null || hitPoints < 1;
+    return hitCountdown == 0;
   }
 
-  private synchronized List<Ships> getShips() {
+  /**
+   * getHitPoints()
+   * @return hitCountdown
+   */
+  private synchronized int getHitPoints() {
+    return hitCountdown;
+  }
+
+  /**
+   * getShips()
+   * @return ships
+   */
+  private synchronized List<Ship> getShips() {
     return ships;
   }
 
+  /**
+   * setShot(int _x, int _y)
+   * @param _x x coordinate
+   * @param _y y coordinate
+   */
   void setShot(int _x, int _y) {
-    if (getOpponentGameBoard()[_x][_y] == null) {
-      getOpponentGameBoard()[_x][_y] = 10;
+    if (this.getOpponentGameBoard()[_x][_y] == null) {
+      this.getOpponentGameBoard()[_x][_y] = 10;
     }
     else {
-      getOpponentGameBoard()[_x][_y] *= -1;
-      --hitPoints;
-
-      if (hitPoints == 0) {
-        setWinner();
-      }
+      this.getOpponentGameBoard()[_x][_y] *= -1;
+      this.decrementCountdown();
     }
   }
 
-  public synchronized void createBoard() {
-    hitPoints = 0;
+  /**
+   * createBoard()
+   */
+  synchronized void createBoard() {
     Carrier carrier = new Carrier();
     ships.add(carrier);
-    seedBoard(carrier.getSize(), carrier.getId());
-    hitPoints += carrier.getSize();
+    seedBoard(carrier.getSize(), carrier.getID());
+    hitCountdown = carrier.getSize();
 
     Battleship battleship = new Battleship();
     ships.add(battleship);
-    seedBoard(battleship.getSize(), battleship.getId());
-    hitPoints += battleship.getSize();
+    seedBoard(battleship.getSize(), battleship.getID());
+    hitCountdown += battleship.getSize();
 
     Cruiser cruiser = new Cruiser();
     ships.add(cruiser);
-    seedBoard(cruiser.getSize(), cruiser.getId());
-    hitPoints += cruiser.getSize();
+    seedBoard(cruiser.getSize(), cruiser.getID());
+    hitCountdown += cruiser.getSize();
 
     Submarine submarine = new Submarine();
     ships.add(submarine);
-    seedBoard(submarine.getSize(), submarine.getId());
-    hitPoints += submarine.getSize();
+    seedBoard(submarine.getSize(), submarine.getID());
+    hitCountdown += submarine.getSize();
 
     Destroyer destroyer = new Destroyer();
     ships.add(destroyer);
-    seedBoard(destroyer.getSize(), destroyer.getId());
-    hitPoints += destroyer.getSize();
+    seedBoard(destroyer.getSize(), destroyer.getID());
+    hitCountdown += destroyer.getSize();
   }
 
-  public synchronized void setFleetSize(int _fleetSize) {
-    fleetSize = _fleetSize;
-  }
-
-  public synchronized void setSunkShips(int _sunkShips) {
-    sunkShips = _sunkShips;
-  }
-
-  public synchronized int getfleetSize() {
-    return fleetSize;
-  }
-
-  public synchronized int getSunkShips() {
-    return sunkShips;
-  }
-
-  public synchronized List<Ships> returnShipList() {
-    return ships;
-  }
-
+  /**
+   * seedBoard(int shipSize, int shipID)
+   * @param shipSize Size of ship
+   * @param shipID ID of ship
+   */
   private synchronized void seedBoard(int shipSize, int shipID) {
     Random rand = new Random();
     int x;
@@ -162,9 +204,17 @@ public class Board implements Serializable {
         playerGameBoard[j][x] = shipID;
       }
     }
-    fleetSize++;
+    // fleetSize++;
   }
 
+  /**
+   * checkSpaceIsOpen(int shipSize, int orientation, int x, int y)
+   * @param shipSize Size of ship
+   * @param orientation Horizontal/vertical orientation
+   * @param x x coordinate
+   * @param y y coordinate
+   * @return spaceCheck
+   */
   private synchronized boolean checkSpaceIsOpen(int shipSize, int orientation, int x, int y) {
     boolean spaceCheck = true;
 
@@ -192,40 +242,12 @@ public class Board implements Serializable {
     return spaceCheck;
   }
 
-  public synchronized void setGameBoards(int[][] playerGameBoard, int[][] opponentGameBoard) {
-    playerGameBoard = playerGameBoard;
-    opponentGameBoard = opponentGameBoard;
-  }
-
-  public synchronized void setOpponentGameBoard(Integer[][] _opponentGameBoard) {
-    opponentGameBoard = _opponentGameBoard;
-  }
-
-  public synchronized Integer[][] getPlayerGameBoard() {
-    return playerGameBoard;
-  }
-
-  public synchronized Integer[][] getOpponentGameBoard() {
-    return opponentGameBoard;
-  }
-
-  public synchronized void setPlayerScore(int playerScore) {
-    playerScore = playerScore;
-  }
-
-  public synchronized int getPlayerScore() {
-    return playerScore;
-  }
-
-  public synchronized void setOpponentScore(int opponentScore) {
-    opponentScore = opponentScore;
-  }
-
-  public synchronized int getOpponentScore() {
-    return opponentScore;
-  }
-
-  public synchronized void printBoard(int x, int y) {
+  /**
+   * printBoard(int x, int y)
+   * @param x x coordinate
+   * @param y y coordinate
+   */
+  synchronized void printBoard(int x, int y) {
 
     while(opponentGameBoard == null || playerGameBoard == null) {
       try {
@@ -281,13 +303,12 @@ public class Board implements Serializable {
           System.out.print("|");
         }
         else if (opponentGameBoard[rows][columns] > 0) {
-          System.out.print("\u001B[44m");
-          System.out.print("__|");
+           System.out.print("\u001B[44m");
+           System.out.print("__|");
 
-         /*
-          System.out.print("\033[38;5;7m");
-          System.out.print("__|");
-          */
+//          System.out.print("\033[38;5;7m");
+//          System.out.print("__|");
+
         }
         else if (opponentGameBoard[rows][columns] < 0) {
           System.out.print("\u001B[0m");
@@ -331,7 +352,7 @@ public class Board implements Serializable {
       System.out.println();
     }
 
-    System.out.println("Please enter a key to select from the following options:");
+    System.out.println("Please select from the following options.");
     System.out.println("   UP - W");
     System.out.println(" LEFT - A");
     System.out.println(" DOWN - S");
@@ -339,3 +360,59 @@ public class Board implements Serializable {
     System.out.println(" FIRE - F");
   }
 }
+
+/*
+// Variables
+private int fleetSize = 0;
+private int sunkShips = 0;
+private int playerScore = 0;
+private int opponentScore = 0;
+
+// Constructor
+fleetSize = _board.getFleetSize();
+sunkShips = _board.getSunkShips();
+playerScore = _board.getPlayerScore();
+opponentScore = _board.getOpponentScore();
+
+// Functions
+public synchronized void setFleetSize(int _fleetSize) {
+  fleetSize = _fleetSize;
+}
+
+public synchronized void setSunkShips(int _sunkShips) {
+  sunkShips = _sunkShips;
+}
+
+public synchronized int getFleetSize() {
+  return fleetSize;
+}
+
+public synchronized int getSunkShips() {
+  return sunkShips;
+}
+
+public synchronized List<Ship.Ship> returnShipList() {
+  return ships;
+}
+
+public synchronized void setGameBoards(int[][] playerGameBoard, int[][] opponentGameBoard) {
+  playerGameBoard = playerGameBoard;
+  opponentGameBoard = opponentGameBoard;
+}
+
+public synchronized void setPlayerScore(int playerScore) {
+  playerScore = playerScore;
+}
+
+public synchronized int getPlayerScore() {
+  return playerScore;
+}
+
+public synchronized void setOpponentScore(int opponentScore) {
+  opponentScore = opponentScore;
+}
+
+public synchronized int getOpponentScore() {
+  return opponentScore;
+}
+*/

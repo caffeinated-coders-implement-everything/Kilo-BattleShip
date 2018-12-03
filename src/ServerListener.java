@@ -1,84 +1,133 @@
-/*
-  Runs on it's own thread on the Server side and provides
-  public, synchronized methods for the ServerHandler to
-  grab Shots sent from the Client.
-
-  SRP: Loop(Get and store the latest Shot from the Client)
-
-  -Chris
-*/
-
+import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.net.Socket;
 
-public class ServerListener extends Listener {
-
-  // Current shot. Updated constantly from contained runnable
+public class ServerListener implements Runnable {
+  private ObjectInputStream inputStream;
+  private final Socket socket;
   private Shot newShot = null;
+
+  private boolean isNewObject = false;
   private boolean isGameOver = false;
+  private boolean hasDisconnect = false;
 
   /**
-   * Constructor
-   * @param _inputStream From containing Connection
+   * ServerListener(ObjectInputStream _inputStream)
+   * @param _socket From containing Handler
    */
-  ServerListener(ObjectInputStream _inputStream) {
-    super(_inputStream);
-  }
-
-  synchronized void flagGameOver() {
-    isGameOver = true;
-  }
-
-  private synchronized boolean isGameOver() {
-    return  isGameOver;
+  ServerListener(Socket _socket) {
+    socket = _socket;
   }
 
   /**
-   * updateObject()
-   * Override ListenerInterface interface
-   * Updates current Shot from Client input.
-   */
-  @Override
-  public void updateObject() {
-    try {
-      Shot tmpShot = (Shot) inputStream.readObject();
-      setNewShot(tmpShot);
-      flagNewObject();
-    }
-    catch(Exception e) {
-      e.printStackTrace();
-      try { inputStream.close(); } catch(Exception ignore) { }
-    }
-  }
-
-  /**
-   * getShot()
-   * Override ListenerInterface interface
-   * Returns current Shot
+   * getNewShot()
    * @return Shot
    */
-  @Override
-  public synchronized Shot getNewShot() {
+  synchronized Shot getNewShot() {
     return newShot;
   }
 
+  /**
+   * setNewShot(Shot _shot)
+   * @param _shot New Shot reference
+   */
   private synchronized void setNewShot(Shot _shot) {
     newShot = _shot;
   }
 
   /**
-   * run()
-   * Override Runnable interface
-   * ServerListener thread
+   * getSocket()
+   * @return socket
+   */
+  private synchronized Socket getSocket() {
+    return socket;
+  }
+
+  /**
+   * hasNewObject()
+   * @return isNewObject
+   */
+  synchronized boolean hasNewObject() {
+    return isNewObject;
+  }
+
+  /**
+   * flagNewObject()
+   */
+  private synchronized void flagNewObject() {
+    isNewObject = true;
+  }
+
+  /**
+   * flagOldObject()
+   */
+  synchronized void flagOldObject() {
+    isNewObject = false;
+  }
+
+  /**
+   * isGameOver()
+   * @return isGameOver
+   */
+  private synchronized boolean isGameOver() {
+    return  isGameOver;
+  }
+
+  /**
+   * hasDisconnect()
+   * @return hasDisconnect
+   */
+  synchronized boolean hasDisconnect() {
+    return hasDisconnect;
+  }
+
+  /**
+   * flagDisconnect()
+   */
+  private synchronized void flagDisconnect() {
+    hasDisconnect = true;
+  }
+
+  /**
+   * killProcess()
+   */
+  synchronized void killProcess() {
+    isGameOver = true;
+  }
+
+  /**
+   * updateShot()
+   */
+  private void updateShot() {
+    try {
+      if (!this.getSocket().isOutputShutdown()) {
+        Shot tmpShot = (Shot) inputStream.readObject();
+        setNewShot(tmpShot);
+        flagNewObject();
+      }
+      else {
+        throw new IOException();
+      }
+
+    } catch (Exception e) {
+      this.flagDisconnect();
+    }
+  }
+
+  /**
+   * ServerListener Runnable
    */
   @Override
   public void run() {
-    while (!isGameOver()) {
-      try {
-        updateObject();
-      }
-      catch(Exception e) {
+    try {
+      inputStream = new ObjectInputStream(socket.getInputStream());
+
+      while (!this.isGameOver() && !this.hasDisconnect()) { this.updateShot(); }
+
+      this.inputStream.close();
+
+    } catch(Exception e) {
         e.printStackTrace();
-      }
     }
   }
 }

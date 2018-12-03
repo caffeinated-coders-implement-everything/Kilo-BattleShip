@@ -2,51 +2,110 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 
 public class InputHandler implements Runnable {
-  ExecutorService threadManager;
-  ClientNotifier notifier;
+  private Scanner keyListener = new Scanner(System.in);
+  private ExecutorService threadManager;
+  private ClientNotifier notifier;
 
+  private boolean isGameOver = false;
   private int x;
   private int y;
-  private char keyPress;
-  private Scanner scanner = new Scanner(System.in);
-  private Shot newShot = null;
 
+
+  /**
+   *
+   * @param _threadManager Passed from Client
+   * @param _notifier Passed from Client
+   */
   InputHandler(ExecutorService _threadManager, ClientNotifier _notifier) {
     threadManager = _threadManager;
     notifier = _notifier;
   }
 
-  public synchronized int getX() {
+  /**
+   * isGameOver()
+   * @return isGameOver
+   */
+  private synchronized boolean isGameOver() {
+    return isGameOver;
+  }
+
+  /**
+   * flagGameOver()
+   */
+  synchronized void flagGameOver() {
+    isGameOver = true;
+  }
+
+  /**
+   * getX()
+   * @return x coordinate
+   */
+  synchronized int getX() {
     return x;
   }
 
-  public synchronized int getY() {
+  /**
+   * getY()
+   * @return y coordinate
+   */
+  synchronized int getY() {
     return y;
   }
 
+  /**
+   * incrementX()
+   */
+  private synchronized void incrementX() {
+    ++x;
+  }
+
+  /**
+   * decrementX()
+   */
+  private synchronized void decrementX() {
+    --x;
+  }
+
+  /**
+   * incrementY()
+   */
+  private synchronized void incrementY() {
+    ++y;
+  }
+
+  /**
+   * decrementY()
+   */
+  private synchronized void decrementY() {
+    --y;
+  }
+
+  /**
+   * CursorManager Runnable
+   */
   @Override
   public void run() {
+    Shot newShot;
+    char keyPress;
+
     threadManager.execute(notifier);
 
-    // w, a, s, d, & f input implementation
-    Scanner keyListener = new Scanner(System.in);
-
-    while(keyListener.hasNext()) {
+    while(!this.isGameOver() && !notifier.hasDisconnect()) {
       try {
         keyPress = keyListener.nextLine().charAt(0);
         keyListener.reset();
 
         if ((keyPress == 'w' || keyPress == 'W') && x != 0) {
-          --x;
+          this.decrementX();
         }
         else if ((keyPress == 's' || keyPress == 'S') && x != (Board.BOARD_LENGTH - 1)) {
-          ++x;
+          this.incrementX();
         }
         else if ((keyPress == 'a' || keyPress == 'A') && y != 0) {
-          --y;
+          this.decrementY();
         }
         else if ((keyPress == 'd' || keyPress == 'D') && y != (Board.BOARD_WIDTH - 1)) {
-          ++y;
+          this.incrementY();
         }
         else if (keyPress == 'f' || keyPress == 'F') {
 
@@ -55,13 +114,27 @@ public class InputHandler implements Runnable {
         }
       }
       catch (Exception e) {
-        keyListener.nextLine();
+        try {
+          keyListener.nextLine();
+        }
+        catch (Exception ignore) { }
       }
     }
 
+    notifier.killProcess();
 
-    // 1, 2, 3, 4 & 9 input implementation
-    /*
+    try {
+      Thread.sleep(500);
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+}
+
+/*
+    1, 2, 3, 4 & 9 input implementation
+
     while(true) {
 
       int playerMove = scanner.nextInt();
@@ -99,6 +172,4 @@ public class InputHandler implements Runnable {
       }
     }
     */
-  }
-}
 

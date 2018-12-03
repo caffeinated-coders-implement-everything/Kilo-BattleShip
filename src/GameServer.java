@@ -1,13 +1,3 @@
-/*
-  Runs on it's own thread on the server side to
-  manage top level game logic and Handler threads.
-
-  SRP: Constant(Gen player1 thread, wait for player2, gen player2 thread)
-       Loop(Checking if game is over and stuff)
-
-  -Chris
-*/
-
 import java.util.concurrent.ExecutorService;
 
 public class GameServer implements Runnable {
@@ -15,9 +5,13 @@ public class GameServer implements Runnable {
   private int gameNumber;
 
   private ExecutorService threadManager;
-  private Connection player1Connection = null;
-  private Connection player2Connection = null;
+  private ServerHandler player1 = null;
+  private ServerHandler player2 = null;
 
+  /**
+   * GameServer(ExecutorService _threadManager)
+   * @param _threadManager Thread pool from Server
+   */
   GameServer(ExecutorService _threadManager) {
     ++gameNumTracker;
     gameNumber = gameNumTracker;
@@ -25,59 +19,51 @@ public class GameServer implements Runnable {
     threadManager = _threadManager;
   }
 
+  /**
+   * getGameNumTracker()
+   * @return gameNumTracker
+   */
   static int getGameNumTracker() {
     return gameNumTracker;
   }
 
-  private int getGameNumber() {
-    return gameNumber;
-  }
-
   /**
-   * setPlayer1()
-   * Sets player1Connection
-   * @param _player1Connection From containing Server
+   * setPlayer1(Handler _player1)
+   * @param _player1 From containing Server
    */
-  synchronized void setPlayer1(Connection _player1Connection) {
-    player1Connection = _player1Connection;
+  synchronized void setPlayer1(ServerHandler _player1) {
+    player1 = _player1;
   }
 
   /**
-   * setPlayer2()
-   * Sets player2Connection
-   * @param _player2Connection From containing Server
+   * setPlayer2(Handler _player2)
+   * @param _player2 From containing Server
    * */
-  synchronized void setPlayer2(Connection _player2Connection) {
-    player2Connection = _player2Connection;
+  synchronized void setPlayer2(ServerHandler _player2) {
+    player2 = _player2;
   }
 
   /**
    * isGameFull()
-   * @return boolean Returns if there are two connections or not
+   * @return boolean Returns if there are two players or not
    */
   private synchronized boolean isGameFull() {
-    return player1Connection != null && player2Connection != null;
+    return player1 != null && player2 != null;
   }
 
   /**
-   * run()
-   * Override Runnable interface
-   * GameServer thread
+   * GameServer Runnable
    */
   @Override
   public void run() {
-    ServerHandler player1Handler;
-    ServerHandler player2Handler;
     int lastSecond = Server.getSeconds();
     int printCycle;
 
-    player1Handler = new ServerHandler(player1Connection, threadManager);
-
-    threadManager.execute(player1Handler);
+    threadManager.execute(player1);
 
     while(!isGameFull()) {
       try {
-        printCycle = Server.getSeconds() ;
+        printCycle = Server.getSeconds();
 
         if ((printCycle != lastSecond) && (printCycle == 0 || (printCycle) % 5 == 0)) {
           System.out.println(Server.getTimeStamp() + "GameServer #" + gameNumber +
@@ -92,54 +78,42 @@ public class GameServer implements Runnable {
       }
     }
 
-    player2Handler = new ServerHandler(player2Connection, threadManager);
+    threadManager.execute(player2);
 
-    threadManager.execute(player2Handler);
+    player1.initializeBoard();
+    player2.initializeBoard();
 
-    player1Handler.initializeBoard();
-    player2Handler.initializeBoard();
+    player1.getCurrentBoard().setOpponentGameBoard(player2.getCurrentBoard().getPlayerGameBoard());
+    player2.getCurrentBoard().setOpponentGameBoard(player1.getCurrentBoard().getPlayerGameBoard());
 
-    player1Handler.getCurrentBoard().setOpponentGameBoard(player2Handler.getCurrentBoard().getPlayerGameBoard());
-    player2Handler.getCurrentBoard().setOpponentGameBoard(player1Handler.getCurrentBoard().getPlayerGameBoard());
+    player1.startGame();
+    player2.startGame();
 
-    player1Handler.startGame();
-    player2Handler.startGame();
+    try {
 
-    while (true) {
-      try {
-         printCycle = Server.getSeconds();
+      while (!player1.isGameOver() && !player2.isGameOver()) {
+        printCycle = Server.getSeconds();
 
         if ((printCycle != lastSecond) && (printCycle == 0 || printCycle % 10 == 0)) {
-          System.out.println(Server.getTimeStamp() + "Game server #" + getGameNumber() + " is running...");
+          System.out.println(Server.getTimeStamp() + "Game server #" + gameNumber + " is running...");
           lastSecond = printCycle;
         }
-
-        if (player1Handler.hasWinner() || player2Handler.hasWinner()) {
-          try {
-            if (player1Handler.hasWinner()) {
-              player2Handler.getCurrentBoard().setLoser();
-            }
-            else {
-              player1Handler.getCurrentBoard().setLoser();
-            }
-
-            Thread.sleep(500); // Ensure next Board is sent
-          }
-          catch (Exception e) {
-            e.printStackTrace();
-          }
-
-          player1Handler.flagGameOver();
-          player2Handler.flagGameOver();
-
-          Thread.sleep(5000);
-          System.out.println(Server.getTimeStamp() + "Game server #" + getGameNumber() + " is shutting down...");
-          break;
-        }
       }
-      catch(Exception e) {
-        e.printStackTrace();
+
+      if (player1.hasWinner()) {
+        player1.getCurrentBoard().setWinner();
+        player2.getCurrentBoard().setLoser();
       }
+      else if (player2.hasWinner()) {
+        player1.getCurrentBoard().setLoser();
+        player2.getCurrentBoard().setWinner();
+      }
+
+      Thread.sleep(1000);
+      System.out.println(Server.getTimeStamp() + "Game server #" + gameNumber + " is shutting down...");
+
+    } catch (Exception e) {
+      e.printStackTrace();
     }
   }
 }

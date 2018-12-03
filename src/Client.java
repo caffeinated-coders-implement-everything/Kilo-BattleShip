@@ -1,70 +1,70 @@
-/*
-  Kilo-Battleship Game Client
-*/
-
-
 import java.io.*;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Client implements Serializable {
-  private static final int PORT = 7777;
-  private static final String IP = "127.0.0.1";
+
+  // You must review the SERVER_IP before running the Client program:
+  private static final String SERVER_IP = "127.0.0.1";
+
+  // Define the port to connect to the server on here:
+  private static final int SERVER_PORT = 7777;
+
 
   public static void main(String[] args) {
     try {
-      Socket socket = new Socket(IP, PORT);
-      ObjectInputStream inputStream = new ObjectInputStream(socket.getInputStream());
-      ObjectOutputStream outputStream = new ObjectOutputStream(socket.getOutputStream());
-      ClientListener listener = new ClientListener(inputStream);
-      ClientNotifier notifier = new ClientNotifier(outputStream);
+      Socket socket = new Socket(SERVER_IP, SERVER_PORT);
+
+
+      ClientListener listener = new ClientListener(socket);
 
       // Create "thread manager"
       ExecutorService threadManager = Executors.newCachedThreadPool();
 
-      InputHandler cursorManager = new InputHandler(threadManager, notifier);
+      InputHandler inputHandler = new InputHandler(threadManager, new ClientNotifier(socket));
 
       // Starts listener thread
       threadManager.execute(listener);
 
       // Starts board refresh thread
-      threadManager.execute(cursorManager);
+      threadManager.execute(inputHandler);
 
       while (listener.getNewBoard() == null) {
-        System.out.println("Waiting for Player 2...");
+        System.out.println("Waiting for other player...");
         Thread.sleep(1000);
       }
 
       Board copyBoard = new Board(listener.getNewBoard());
 
-      while (copyBoard.isWinner() == null) {
-        copyBoard.printBoard(cursorManager.getX(), cursorManager.getY());
+      while (copyBoard.isWinner() == null && !listener.hasDisconnect()) {
+        copyBoard.printBoard(inputHandler.getX(), inputHandler.getY());
         copyBoard = new Board(listener.getNewBoard());
         Thread.sleep(1000);
       }
 
-      // Flag threads to shutdown
-
-      try {
-        Thread.sleep(1000);
-      }
-      catch (Exception e) {
-        e.printStackTrace();
-      }
-
-      copyBoard.printBoard(cursorManager.getX(), cursorManager.getY());
+      copyBoard.printBoard(inputHandler.getX(), inputHandler.getY());
 
       if (copyBoard.isWinner()) {
-        System.out.println("You won");
+        System.out.println("\nYou won!");
+      }
+      else if (!copyBoard.isWinner()) {
+        System.out.println("\nYou lost :(");
       }
       else {
-        System.out.println("You lost");
+        System.out.println("A player has disconnected. Your fleet lives another day.");
       }
+
+      inputHandler.flagGameOver();
+      listener.killProcess();
+
+      Thread.sleep(1000);
+
+      System.exit(0);
     }
     catch (Exception e) {
-       e.printStackTrace();
-      // Commented out to ignore EOF "flag"
+      System.out.println("\nA random nuke just dropped on everyone. That happens sometimes...");
+      System.exit(-1);
     }
   }
 }

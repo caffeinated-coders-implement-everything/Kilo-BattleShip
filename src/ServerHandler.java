@@ -1,100 +1,190 @@
-/*
-  Runs on it's own thread on the server side to process
-  a mutation of the currentBoard based on the currentShot
-
-  SRP: Loop(Process currentShot )
-
-  -Chris
-*/
-
+import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 
 public class ServerHandler implements Runnable {
+  private static int totalConnectionNum;
+  private int connectionNum;
 
-  private Connection player;
   private ExecutorService threadManager;
-  private boolean isWinner = false;
+  private ServerListener listener;
+  private ServerNotifier notifier;
+
+  private Shot currentShot = null;
+  private Board currentBoard = null;
+
+  private boolean hasWinner = false;
+  private boolean isGameStarted = false;
+  private boolean isGameOver = false;
 
   /**
-   * Constructor
-   * @param _player From containing Game
+   * (Socket _socket, ExecutorService _threadManager)
+   * @param _socket Player socket from Server
    */
-  ServerHandler(Connection _player, ExecutorService _threadManager) {
-    player = _player;
-    threadManager = _threadManager;
-  }
+  ServerHandler(Socket _socket, ExecutorService _threadManager) {
+    try {
+      ++totalConnectionNum;
+      connectionNum = totalConnectionNum;
+      threadManager = _threadManager;
+      listener = new ServerListener(_socket);
+      notifier = new ServerNotifier(_socket);
 
-  private synchronized void flagWinner() {
-    isWinner = true;
-  }
-
-  synchronized boolean hasWinner() {
-    return isWinner;
-  }
-
-  void flagGameOver() {
-    player.flagGameOver();
+    } catch(Exception e) {
+      e.printStackTrace();
+    }
   }
 
   /**
-   *
+   * totalConnectionNum()
+   * @return totalConnectionNum
    */
-  synchronized void startGame() {
-    player.startGame();
-  }
-
-  synchronized void initializeBoard() {
-    player.initializeBoard();
+  static int totalConnectionNum() {
+    return totalConnectionNum;
   }
 
   /**
-   *
-   * @return currentBoard
+   * connectionNum()
+   * @return connectionNum
+   */
+  public int connectionNum() {
+    return connectionNum;
+  }
+
+  /**
+   * killStreams()
+   */
+  private void killStreams() {
+    listener.killProcess();
+    notifier.killProcess();
+  }
+
+  /**
+   * isGameOver()
+   * @return isGameOver
+   */
+  synchronized boolean isGameOver() {
+    return isGameOver;
+  }
+
+  /**
+   * flagGameOver()
+   */
+  private synchronized void flagGameOver() {
+    isGameOver = true;
+  }
+
+  /**
+   * getCurrentShot()
+   * @return Shot Returns currentShot
+   */
+  private synchronized Shot getCurrentShot() {
+    return currentShot;
+  }
+
+  /**
+   * setCurrentShot(Shot _currentShot)
+   * @param _currentShot Newest Shot
+   */
+  private synchronized void setCurrentShot(Shot _currentShot) {
+    currentShot = _currentShot;
+  }
+
+  /**
+   * setCurrentBoard(Board _currentBoard)
+   * @param _currentBoard From containing ServerHandler
+   */
+  private synchronized void setCurrentBoard(Board _currentBoard) {
+    currentBoard = _currentBoard;
+  }
+
+  /**
+   * getCurrentBoard()
+   * @return Board Returns current Board
    */
   synchronized Board getCurrentBoard() {
-    return player.getCurrentBoard();
+    return currentBoard;
   }
 
   /**
-   * run()
-   * ServerHandler thread
+   * initializeBoard()
+   */
+  synchronized void initializeBoard() {
+    currentBoard = new Board();
+    currentBoard.createBoard();
+    notifier.setNewBoard(currentBoard);
+  }
+
+  /**
+   * startGame()
+   */
+  synchronized void startGame() {
+    isGameStarted = true;
+  }
+
+  /**
+   * hasGameStarted()
+   * @return isGameStarted
+   */
+  private synchronized boolean hasGameStarted() {
+    return isGameStarted;
+  }
+
+  /**
+   * flagWinner()
+   */
+  private synchronized void flagWinner() {
+    hasWinner = true;
+  }
+
+  /**
+   * hasWinner()
+   * @return hasWinner
+   */
+  synchronized boolean hasWinner() {
+    return hasWinner;
+  }
+
+  /**
+   * Handler Runnable
    */
   @Override
   public void run() {
-    threadManager.execute(player);
+    threadManager.execute(listener);
+    threadManager.execute(notifier);
+    Board tmpBoard;
 
-    while(!player.hasGameStarted()) {
-      try {
-        Thread.sleep(50);
-      }
-      catch(Exception e) {
-        e.printStackTrace();
-      }
-    }
+    try {
 
-    while (!player.isGameOver()) {
-      if(player.hasNewShot()) {
-        player.flagOldShot();
-        Board tmpBoard = new Board(player.getCurrentBoard());
-        tmpBoard.setShot(player.getCurrentShot().getX(), player.getCurrentShot().getY());
-        player.setCurrentBoard(tmpBoard);
+      while (!hasGameStarted()) { Thread.sleep(50); }
 
-        if (tmpBoard.isWinner() != null) {
-          flagWinner();
-          try {
-            Thread.sleep(5000);
-          }
-          catch(Exception e) {
-            e.printStackTrace();
-          }
+      while (!getCurrentBoard().isGameOver() && !listener.hasDisconnect() && !notifier.hasDisconnect()) {
+
+        if (listener.hasNewObject()) {
+          listener.flagOldObject();
+          this.setCurrentShot(new Shot(listener.getNewShot()));
+          tmpBoard = new Board(getCurrentBoard());
+          tmpBoard.setShot(getCurrentShot().getX(), getCurrentShot().getY());
+          setCurrentBoard(tmpBoard);
+
+          notifier.setNewBoard(getCurrentBoard());
         }
       }
-      try {
-        Thread.sleep(10);
+
+      if (getCurrentBoard().isGameOver()) {
+        this.flagWinner();
+        this.flagGameOver();
       }
-      catch(Exception e) {
-        e.printStackTrace();
+      else {
+        this.flagGameOver();
       }
+
+      this.killStreams();
+
+      Thread.sleep(10000);
+
+      System.out.println(Server.getTimeStamp() + "Player #" + connectionNum() + " disconnecting...");
+
+    } catch (Exception e) {
+      e.printStackTrace();
     }
   }
 }

@@ -1,17 +1,469 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Board.java" line="255" />
+    <bookmark url="file://$PROJECT_DIR$/src/Board.java" line="260" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29d93337-9f8d-442e-b7a5-e9020babbe97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/CursorManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/Mega_Battleship_Java_Client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/out/production/Mega_Battleship_Java_Client/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/out/production/Mega_Battleship_Java_Client/Incoming.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/out/production/Mega_Battleship_Java_Client/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/out/production/Mega_Battleship_Java_Client/Outgoing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/src/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/src/Incoming.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Client/src/Outgoing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/Mega_Battleship.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Battleship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Carrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Cruiser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Destroyer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Frigate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/GameType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Heading.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Map.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Patrol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Ship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Simple_Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/Mega_Battleship_Java_Server/src/Submarine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/TestServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/out/production/TestServer/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/out/production/TestServer/SimpleClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/out/production/TestServer/SimpleServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/src/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/src/SimpleClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/andy/TestServer/src/SimpleServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/Kilo-Battleship.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Battleship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Carrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ClientNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Cruiser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/CursorManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Destroyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/GameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/NotifierInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ServerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ServerNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Ships.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Submarine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Battleship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Carrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/ClientListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/ClientNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Cruiser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/CursorManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Destroyer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/GameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/ListenerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/NotifierInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/ServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/ServerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/ServerNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Ships.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Shot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/Submarine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Battleship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Carrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/ClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/ClientNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Cruiser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/CursorManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Destroyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/GameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/NotifierInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/ServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/ServerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/ServerNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Ships.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/Kilo-Battleship/src/class/Submarine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/._Kilo-Battleship" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/._Kilo-Battleship.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/._out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/._src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/.idea/._misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/.idea/._modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/._production" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/._Kilo-Battleship" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Battleship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Carrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Cruiser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Destroyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Ships.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Submarine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/.idea/._misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/.idea/._modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/.idea/._src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/.idea/._workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Battleship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Carrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._ClientListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._ClientNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Cruiser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Destroyer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._GameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._ListenerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._NotifierInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._ServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._ServerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._ServerNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Ships.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Shot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/._Submarine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/.idea/._misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/.idea/._modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/.idea/._src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/Build_181201-C/__MACOSX/Kilo-Battleship/src/.idea/._workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/TestServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/out/production/TestServer/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/out/production/TestServer/SimpleClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/out/production/TestServer/SimpleServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/src/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/src/SimpleClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/TestServer/src/SimpleServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brian/generic-server-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/Kilo-Battleship.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Battleship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Carrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ClientNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ConnectionServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Cruiser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/CursorManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Destroyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/GameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/NotifierInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ServerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/ServerNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Ships.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/out/production/Kilo-Battleship/Submarine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Battleship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Battleship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Carrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Carrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ClientListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ClientNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ClientNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ConnectionServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ConnectionServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Cruiser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Cruiser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/CursorManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/CursorManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Destroyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Destroyer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/GameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/GameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ListenerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/NotifierInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/NotifierInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ServerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ServerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ServerNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/ServerNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Ships.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Ships.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Shot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Submarine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/Kilo-Battleship/src/Submarine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/._Kilo-Battleship" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/._Kilo-Battleship.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/._out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/._src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/.idea/._misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/.idea/._modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/._production" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/._Kilo-Battleship" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Battleship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Carrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Cruiser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Destroyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Ships.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/._Submarine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/.idea/._misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/.idea/._modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/.idea/._src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/out/production/Kilo-Battleship/.idea/._workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Battleship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Carrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._ClientListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._ClientNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Cruiser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Destroyer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._GameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._ListenerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._NotifierInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._ServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._ServerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._ServerNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Ships.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Shot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/._Submarine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/.idea/._misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/.idea/._modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/.idea/._src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/181201-C/__MACOSX/Kilo-Battleship/src/.idea/._workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/.idea/Kilo-Battleship.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/Kilo-BattleshipClient.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/ClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/ClientNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/NotifierInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/ClientListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/ClientNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/ListenerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/NotifierInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipClient/src/Shot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/Kilo-BattleshipServer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/ConnectionServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/GameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/NotifierInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/ServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/ServerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/ServerNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/out/production/Kilo-BattleshipServer/ShotProcess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/ConnectionServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/GameServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/ListenerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/NotifierInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/ServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/ServerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/ServerNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/Shot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/Kilo-Battleship/Kilo-BattleshipServer/src/ShotProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/ShipBattle/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/._Kilo-BattleshipClient" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/._.idea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/._Kilo-BattleshipClient.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/.__DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/._out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/._src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/.idea/._encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/.idea/._misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/.idea/._modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/.idea/._workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/._production" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/._Kilo-BattleshipClient" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._ClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._ClientNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._NotifierInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/out/production/Kilo-BattleshipClient/._Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/src/._Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/src/._ClientListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/src/._ClientNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/src/._Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/src/._ListenerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/src/._Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/src/._NotifierInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/__MACOSX/Kilo-Battleship/Kilo-BattleshipClient/src/._Shot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chris/placeholder.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battleship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Carrier.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CursorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cruiser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Destroyer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListenerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NotifierInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ships.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Submarine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Battleship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Carrier.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/class/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/class/CursorManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/ClientListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/ClientListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/ClientNotifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/ClientNotifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Cruiser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Destroyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/GameServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/GameServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/InputHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/InputHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/ListenerInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/NotifierInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/ServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/ServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/ServerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/ServerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/ServerNotifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/ServerNotifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Ships.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Shot.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/class/Shot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class/Submarine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Battleship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Carrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Cruiser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Destroyer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Ships.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/Submarine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todd/placeholder.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,19 +532,34 @@
     <session id="-1938519048">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="12" />
+          <entry key="dummy" value="18" />
+          <entry key="java" value="225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="JAVA" value="225" />
+          <entry key="PLAIN_TEXT" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="18" />
         </counts>
       </usages-collector>
     </session>
@@ -100,28 +567,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameServer.java">
+        <entry file="file://$PROJECT_DIR$/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Board.java">
+        <entry file="file://$PROJECT_DIR$/src/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
+            <state relative-caret-position="68">
+              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -129,8 +587,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+            <state relative-caret-position="64">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4505">
+              <caret line="285" column="13" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,10 +613,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/CursorManager.java" />
-        <option value="$PROJECT_DIR$/src/Board.java" />
         <option value="$PROJECT_DIR$/src/InputHandler.java" />
+        <option value="$PROJECT_DIR$/src/Board.java" />
+        <option value="$PROJECT_DIR$/src/Server.java" />
+        <option value="$PROJECT_DIR$/src/Client.java" />
       </list>
     </option>
   </component>
@@ -171,8 +642,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,29 +655,18 @@
               <item name="Kilo-BattleShip" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Kilo-BattleShip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kilo-BattleShip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Kilo-BattleShip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kilo-BattleShip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Server" type="1a9f42e2:ClassTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543818488308" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543866503287" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -228,7 +687,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="Kilo-BattleShip" />
@@ -261,17 +720,20 @@
       <workItem from="1543724539514" duration="1876000" />
       <workItem from="1543729160285" duration="6447000" />
       <workItem from="1543818151001" duration="277000" />
+      <workItem from="1543818481123" duration="2277000" />
+      <workItem from="1543863951627" duration="16000" />
+      <workItem from="1543864804486" duration="1670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8600000" />
+    <option name="totallyTimeSpent" value="12563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31852987" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16079633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -279,8 +741,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.61417323" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5181102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -289,7 +751,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3293348" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32913387" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -300,6 +762,36 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16079633" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34330708" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32913387" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -308,38 +800,91 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GameServer.java">
+    <entry file="file://$PROJECT_DIR$/src/Server.java" />
+    <entry file="file://$PROJECT_DIR$/src/Connection.java" />
+    <entry file="file://$PROJECT_DIR$/src/Listener.java" />
+    <entry file="file://$PROJECT_DIR$/src/ListenerInterface.java" />
+    <entry file="file://$PROJECT_DIR$/src/Notifier.java" />
+    <entry file="file://$PROJECT_DIR$/src/prev/ServerListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prev/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2117">
+          <caret line="171" column="4" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prev/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/prev/InputHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
+        <state relative-caret-position="4505">
+          <caret line="285" column="13" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state relative-caret-position="64">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="68">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
         </state>
       </provider>
     </entry>
