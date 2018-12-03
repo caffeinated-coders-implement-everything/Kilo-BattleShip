@@ -39,13 +39,13 @@ public class CursorManager implements Runnable {
         if ((keyPress == 'w' || keyPress == 'W') && x != 0) {
           --x;
         }
-        else if ((keyPress == 's' || keyPress == 'S') && x != (Board.boardLength - 1)) {
+        else if ((keyPress == 's' || keyPress == 'S') && x != (Board.BOARD_LENGTH - 1)) {
           ++x;
         }
         else if ((keyPress == 'a' || keyPress == 'A') && y != 0) {
           --y;
         }
-        else if ((keyPress == 'd' || keyPress == 'D') && y != (Board.boardWidth - 1)) {
+        else if ((keyPress == 'd' || keyPress == 'D') && y != (Board.BOARD_WIDTH - 1)) {
           ++y;
         }
         else if (keyPress == 'f' || keyPress == 'F') {

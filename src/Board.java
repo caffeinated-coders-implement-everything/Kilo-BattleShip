@@ -4,8 +4,11 @@ import java.util.List;
 import java.util.Random;
 
 public class Board implements Serializable {
-  public static final int boardLength = 10;
-  public static final int boardWidth = 10;
+
+  // NOTE: Set the size of the game boards here:
+  public static final int BOARD_LENGTH = 10;
+  public static final int BOARD_WIDTH = 10;
+
 
   private int fleetSize = 0;
   private int sunkShips = 0;
@@ -20,8 +23,8 @@ public class Board implements Serializable {
   private List<Ships> ships;
 
   Board() {
-    playerGameBoard = new Integer[boardLength][boardWidth];
-    opponentGameBoard = new Integer[boardLength][boardWidth];
+    playerGameBoard = new Integer[BOARD_LENGTH][BOARD_WIDTH];
+    opponentGameBoard = new Integer[BOARD_LENGTH][BOARD_WIDTH];
     ships = new ArrayList<>();
   }
 
@@ -133,11 +136,11 @@ public class Board implements Serializable {
 
     do {
       do{
-        x = rand.nextInt(boardWidth) - shipSize;
+        x = rand.nextInt(BOARD_WIDTH) - shipSize;
       } while (x < 0);
 
       do{
-        y = rand.nextInt(boardWidth) - shipSize;
+        y = rand.nextInt(BOARD_WIDTH) - shipSize;
       } while (y < 0);
 
       orientation = rand.nextInt(2);
@@ -235,12 +238,12 @@ public class Board implements Serializable {
     System.out.print("\u001B[44m");
     System.out.print("\u001B[0m");
 
-    for (int rows = 0; rows < boardLength; rows++) {
+    for (int rows = 0; rows < BOARD_LENGTH; rows++) {
 
       System.out.print("\u001B[44m");
       System.out.print("|");
 
-      for (int columns = 0; columns < boardWidth; columns++) {
+      for (int columns = 0; columns < BOARD_WIDTH; columns++) {
         // prints cursor
         if (rows == x && columns == y) {
           System.out.print("\u001B[0m");
@@ -297,7 +300,7 @@ public class Board implements Serializable {
       System.out.print("\u001B[30m");
       System.out.print(" ");
 
-      for (int columns = 0; columns < boardWidth; columns++) {
+      for (int columns = 0; columns < BOARD_WIDTH; columns++) {
         // prints water
         if (playerGameBoard[rows][columns] == null) {
           System.out.print("\u001B[44m");
