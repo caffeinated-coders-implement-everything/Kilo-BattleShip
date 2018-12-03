@@ -4,33 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Board.java" line="253" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29d93337-9f8d-442e-b7a5-e9020babbe97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Battleship.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Carrier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/ClientListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/ClientNotifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Connection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Cruiser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/CursorManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Destroyer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/GameServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/ListenerInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Notifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/NotifierInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/ServerHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/ServerListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/ServerNotifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Ships.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Shot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/class/Submarine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CursorManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CursorManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="29d93337-9f8d-442e-b7a5-e9020babbe97" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,8 +102,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            <state relative-caret-position="306">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -204,7 +178,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543814881557" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543815135029" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -225,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="Kilo-BattleShip" />
@@ -256,12 +230,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543724537955</updated>
       <workItem from="1543724539514" duration="1876000" />
-      <workItem from="1543729160285" duration="4612000" />
+      <workItem from="1543729160285" duration="4895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6488000" />
+    <option name="totallyTimeSpent" value="6771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -327,8 +301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        <state relative-caret-position="306">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
