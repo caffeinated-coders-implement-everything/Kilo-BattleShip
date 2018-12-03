@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 
-public class CursorManager implements Runnable {
+public class InputHandler implements Runnable {
   ExecutorService threadManager;
   ClientNotifier notifier;
 
@@ -11,7 +11,7 @@ public class CursorManager implements Runnable {
   private Scanner scanner = new Scanner(System.in);
   private Shot newShot = null;
 
-  CursorManager(ExecutorService _threadManager, ClientNotifier _notifier) {
+  InputHandler(ExecutorService _threadManager, ClientNotifier _notifier) {
     threadManager = _threadManager;
     notifier = _notifier;
   }

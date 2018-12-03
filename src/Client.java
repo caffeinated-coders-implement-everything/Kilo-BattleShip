@@ -3,8 +3,6 @@
 */
 
 
-import sun.awt.windows.ThemeReader;
-
 import java.io.*;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
@@ -25,7 +23,7 @@ public class Client implements Serializable {
       // Create "thread manager"
       ExecutorService threadManager = Executors.newCachedThreadPool();
 
-      CursorManager cursorManager = new CursorManager(threadManager, notifier);
+      InputHandler cursorManager = new InputHandler(threadManager, notifier);
 
       // Starts listener thread
       threadManager.execute(listener);
