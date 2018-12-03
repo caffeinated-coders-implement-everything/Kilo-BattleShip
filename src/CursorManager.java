@@ -28,7 +28,7 @@ public class CursorManager implements Runnable {
   public void run() {
     threadManager.execute(notifier);
 
-    // w, a, s, d, & 4 input implementation
+    // w, a, s, d, & f input implementation
     Scanner keyListener = new Scanner(System.in);
 
     while(keyListener.hasNext()) {

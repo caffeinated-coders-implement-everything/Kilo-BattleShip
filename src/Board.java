@@ -15,6 +15,8 @@ public class Board implements Serializable {
   private int playerScore = 0;
   private int opponentScore = 0;
   private Integer hitPoints = null; // IMPORTANT
+
+  // Possible values: {null: no winner, true: player is winner, false: player is loser}
   private Boolean isWinner = null;
 
   private Integer[][] playerGameBoard;
