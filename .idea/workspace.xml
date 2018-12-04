@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Board.java" line="260" />
+    <bookmark url="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Board.java" line="278" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29d93337-9f8d-442e-b7a5-e9020babbe97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ServerNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Ship/Destroyer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Submarine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/ClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/ClientNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/GameServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/InputHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/ServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/ServerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/ServerNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Ship/Battleship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Ship/Carrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Ship/Cruiser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Ship/Destroyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Ship/Ship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Ship/Submarine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Kilo-BattleShip/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ClientListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ClientNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ServerNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ship/Battleship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Battleship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ship/Carrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Carrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ship/Cruiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Cruiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ship/Destroyer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ship/Submarine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Shot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,23 +123,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="18" />
-          <entry key="java" value="225" />
+          <entry key="java" value="2584" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="225" />
+          <entry key="JAVA" value="2584" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="18" />
+          <entry key="java" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="18" />
+          <entry key="JAVA" value="113" />
         </counts>
       </usages-collector>
     </session>
@@ -111,45 +147,103 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+            <state relative-caret-position="51">
+              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Server.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+            <state relative-caret-position="51">
+              <caret line="3" column="78" selection-start-line="3" selection-start-column="78" selection-end-line="3" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/package-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-243">
+              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerNotifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Shot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="85">
+              <caret line="74" column="14" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Board.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ClientListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4420">
-              <caret line="285" column="13" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ClientNotifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/GameServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -158,10 +252,44 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/CursorManager.java" />
+        <option value="$PROJECT_DIR$/src/Shot.java" />
+        <option value="$PROJECT_DIR$/src/Ship/Battleship.java" />
+        <option value="$PROJECT_DIR$/src/ClientListener.java" />
+        <option value="$PROJECT_DIR$/src/ClientNotifier.java" />
+        <option value="$PROJECT_DIR$/src/GameServer.java" />
         <option value="$PROJECT_DIR$/src/InputHandler.java" />
-        <option value="$PROJECT_DIR$/src/Board.java" />
         <option value="$PROJECT_DIR$/src/Server.java" />
+        <option value="$PROJECT_DIR$/src/ServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/ServerListener.java" />
+        <option value="$PROJECT_DIR$/src/ServerNotifier.java" />
+        <option value="$PROJECT_DIR$/src/Ship/Carrier.java" />
+        <option value="$PROJECT_DIR$/src/Ship/Cruiser.java" />
+        <option value="$PROJECT_DIR$/src/Ship/Destroyer.java" />
+        <option value="$PROJECT_DIR$/src/Ship/Ship.java" />
+        <option value="$PROJECT_DIR$/src/Ship/Submarine.java" />
+        <option value="$PROJECT_DIR$/src/Board.java" />
         <option value="$PROJECT_DIR$/src/Client.java" />
+        <option value="$PROJECT_DIR$/src/KiloBattleShip/Client.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/game/Board.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Client.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Server.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Battleship.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Carrier.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Cruiser.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Destroyer.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Ship.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Submarine.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Board.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ClientListener.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ClientNotifier.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/GameServer.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/InputHandler.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerListener.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerNotifier.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/package-info.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/package-info.java" />
+        <option value="$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Shot.java" />
       </list>
     </option>
   </component>
@@ -199,18 +327,31 @@
               <item name="Kilo-BattleShip" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Kilo-BattleShip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kilo-BattleShip" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kilobattleship" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kilo-BattleShip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kilo-BattleShip" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kilobattleship" type="462c0819:PsiDirectoryNode" />
+              <item name="ship" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543874168400" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543892956240" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -218,6 +359,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Q:\!--MEDIA\Dropbox\sumnerbr\2018 FALL\csci3800\prj\GIT\Kilo-BattleShip\src\edu\ucdenver\csci3800\fall2018\kilobattleship\ship" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -233,14 +379,14 @@
   </component>
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Client" />
+      <option name="MAIN_CLASS_NAME" value="edu.ucdenver.csci3800.fall2018.kilobattleship.Client" />
       <module name="Kilo-BattleShip" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Server" />
+      <option name="MAIN_CLASS_NAME" value="edu.ucdenver.csci3800.fall2018.kilobattleship.Server" />
       <module name="Kilo-BattleShip" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -267,18 +413,18 @@
       <workItem from="1543818481123" duration="2277000" />
       <workItem from="1543863951627" duration="16000" />
       <workItem from="1543864804486" duration="2490000" />
-      <workItem from="1543884362851" duration="253000" />
+      <workItem from="1543884362851" duration="8428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13636000" />
+    <option name="totallyTimeSpent" value="21811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16079633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.204236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -286,8 +432,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5169082" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5152979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,7 +442,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32913387" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -308,7 +454,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16079633" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.204236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -316,8 +462,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34330708" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5152979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -326,7 +472,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32913387" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -350,58 +496,155 @@
     <entry file="file://$PROJECT_DIR$/src/ListenerInterface.java" />
     <entry file="file://$PROJECT_DIR$/src/Notifier.java" />
     <entry file="file://$PROJECT_DIR$/src/prev/ServerListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/GameServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/prev/Board.java" />
     <entry file="file://$PROJECT_DIR$/src/prev/Client.java" />
     <entry file="file://$PROJECT_DIR$/src/prev/InputHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/KiloBattleShip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Battleship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        <state relative-caret-position="162">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Carrier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4420">
-          <caret line="285" column="13" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Cruiser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Destroyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/Submarine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        <state relative-caret-position="-705">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/InputHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ClientListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ClientNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/GameServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="78" selection-start-line="3" selection-start-column="78" selection-end-line="3" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/ship/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ucdenver/csci3800/fall2018/kilobattleship/Shot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="74" column="14" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
         </state>
       </provider>
     </entry>
