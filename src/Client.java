@@ -14,15 +14,15 @@ public class Client implements Serializable {
 
   public static void main(String[] args) {
     try {
-      Socket socket = new Socket(SERVER_IP, SERVER_PORT);
-
-
-      ClientListener listener = new ClientListener(socket);
-
       // Create "thread manager"
       ExecutorService threadManager = Executors.newCachedThreadPool();
 
+      Socket socket = new Socket(SERVER_IP, SERVER_PORT);
+      socket.setSoTimeout(250);
+
       InputHandler inputHandler = new InputHandler(threadManager, new ClientNotifier(socket));
+
+      ClientListener listener = new ClientListener(socket);
 
       // Starts listener thread
       threadManager.execute(listener);
@@ -37,7 +37,7 @@ public class Client implements Serializable {
 
       Board copyBoard = new Board(listener.getNewBoard());
 
-      while (copyBoard.isWinner() == null && !listener.hasDisconnect()) {
+      while (copyBoard.isWinner() == null && !inputHandler.isGameOver() && !listener.isGameOver()) {
         copyBoard.printBoard(inputHandler.getX(), inputHandler.getY());
         copyBoard = new Board(listener.getNewBoard());
         Thread.sleep(1000);
@@ -45,24 +45,23 @@ public class Client implements Serializable {
 
       copyBoard.printBoard(inputHandler.getX(), inputHandler.getY());
 
-      if (copyBoard.isWinner()) {
+      inputHandler.flagGameOver();
+      listener.killProcess();
+
+      if (copyBoard.isWinner() == null) {
+        System.out.println("Your opponent has disconnected. Your fleet lives another day.");
+      }
+      else if (copyBoard.isWinner()) {
         System.out.println("\nYou won!");
       }
       else if (!copyBoard.isWinner()) {
         System.out.println("\nYou lost :(");
       }
-      else {
-        System.out.println("A player has disconnected. Your fleet lives another day.");
-      }
-
-      inputHandler.flagGameOver();
-      listener.killProcess();
-
-      Thread.sleep(1000);
 
       System.exit(0);
     }
     catch (Exception e) {
+      e.printStackTrace();
       System.out.println("\nA random nuke just dropped on everyone. That happens sometimes...");
       System.exit(-1);
     }

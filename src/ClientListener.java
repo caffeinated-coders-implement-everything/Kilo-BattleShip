@@ -1,5 +1,6 @@
 import java.io.ObjectInputStream;
 import java.net.Socket;
+import java.net.SocketTimeoutException;
 
 public class ClientListener implements Runnable {
   private ObjectInputStream inputStream;
@@ -63,6 +64,10 @@ public class ClientListener implements Runnable {
     isGameOver = true;
   }
 
+  synchronized boolean isGameOver() {
+    return isGameOver;
+  }
+
   /**
    * updateBoard()
    */
@@ -71,9 +76,12 @@ public class ClientListener implements Runnable {
         Board incomingBoard = (Board) inputStream.readObject();
         this.setNewBoard(incomingBoard);
 
-    } catch (Exception e) {
-      System.out.println("\nConnection to server lost...");
-    }
+    } catch (SocketTimeoutException ste) {
+      if (this.getNewBoard() != null) {
+        System.out.println("\nConnection to server lost...");
+        this.killProcess();
+      }
+    } catch (Exception ignoreRest) { }
   }
 
   /**
@@ -84,10 +92,9 @@ public class ClientListener implements Runnable {
     try {
       inputStream = new ObjectInputStream(socket.getInputStream());
 
-      while (!this.isGameOver && !this.getSocket().isOutputShutdown()) { this.updateBoard(); }
+      while (!this.isGameOver) { this.updateBoard(); }
 
       this.inputStream.close();
-      this.flagDisconnect();
 
     } catch(Exception e) {
         e.printStackTrace();

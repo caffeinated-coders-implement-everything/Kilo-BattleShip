@@ -108,8 +108,14 @@ public class GameServer implements Runnable {
         player1.getCurrentBoard().setLoser();
         player2.getCurrentBoard().setWinner();
       }
+      else if (player1.isGameOver()) {
+        player2.flagDisconnect();
+      }
+      else if (player2.isGameOver()) {
+        player1.flagDisconnect();
+      }
 
-      Thread.sleep(1000);
+      Thread.sleep(2000);
       System.out.println(Server.getTimeStamp() + "Game server #" + gameNumber + " is shutting down...");
 
     } catch (Exception e) {

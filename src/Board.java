@@ -141,30 +141,33 @@ class Board implements Serializable {
    * createBoard()
    */
   synchronized void createBoard() {
+
+    hitCountdown = 1;
+
     Carrier carrier = new Carrier();
     ships.add(carrier);
     seedBoard(carrier.getSize(), carrier.getID());
-    hitCountdown = carrier.getSize();
+    //hitCountdown = carrier.getSize();
 
     Battleship battleship = new Battleship();
     ships.add(battleship);
     seedBoard(battleship.getSize(), battleship.getID());
-    hitCountdown += battleship.getSize();
+    //hitCountdown += battleship.getSize();
 
     Cruiser cruiser = new Cruiser();
     ships.add(cruiser);
     seedBoard(cruiser.getSize(), cruiser.getID());
-    hitCountdown += cruiser.getSize();
+    //hitCountdown += cruiser.getSize();
 
     Submarine submarine = new Submarine();
     ships.add(submarine);
     seedBoard(submarine.getSize(), submarine.getID());
-    hitCountdown += submarine.getSize();
+    //hitCountdown += submarine.getSize();
 
     Destroyer destroyer = new Destroyer();
     ships.add(destroyer);
     seedBoard(destroyer.getSize(), destroyer.getID());
-    hitCountdown += destroyer.getSize();
+    //hitCountdown += destroyer.getSize();
   }
 
   /**
@@ -303,11 +306,11 @@ class Board implements Serializable {
           System.out.print("|");
         }
         else if (opponentGameBoard[rows][columns] > 0) {
-           System.out.print("\u001B[44m");
-           System.out.print("__|");
+          // System.out.print("\u001B[44m");
+          // System.out.print("__|");
 
-//          System.out.print("\033[38;5;7m");
-//          System.out.print("__|");
+          System.out.print("\033[38;5;7m");
+          System.out.print("__|");
 
         }
         else if (opponentGameBoard[rows][columns] < 0) {

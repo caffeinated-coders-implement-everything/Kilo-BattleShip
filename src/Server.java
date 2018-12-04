@@ -13,7 +13,7 @@ public class Server
   private static final DateTimeFormatter timeStampFormatter = DateTimeFormatter.ofPattern("(yyyy/MM/dd HH:mm:ss)");
 
   /**
-   *
+   * getSeconds()
    * @return LocalDateTime.now().getSecond()
    */
   synchronized static int getSeconds() {
@@ -21,7 +21,7 @@ public class Server
   }
 
   /**
-   *
+   * getTimeStamp()
    * @return LocalDateTime.now()
    */
   synchronized static String getTimeStamp() {

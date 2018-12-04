@@ -25,7 +25,7 @@ public class InputHandler implements Runnable {
    * isGameOver()
    * @return isGameOver
    */
-  private synchronized boolean isGameOver() {
+  public synchronized boolean isGameOver() {
     return isGameOver;
   }
 
@@ -80,6 +80,10 @@ public class InputHandler implements Runnable {
     --y;
   }
 
+  synchronized boolean hasDisconnect() {
+    return notifier.hasDisconnect();
+  }
+
   /**
    * CursorManager Runnable
    */
@@ -90,7 +94,7 @@ public class InputHandler implements Runnable {
 
     threadManager.execute(notifier);
 
-    while(!this.isGameOver() && !notifier.hasDisconnect()) {
+    while(!this.isGameOver()) {
       try {
         keyPress = keyListener.nextLine().charAt(0);
         keyListener.reset();

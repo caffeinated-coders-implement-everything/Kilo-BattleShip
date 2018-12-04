@@ -88,13 +88,8 @@ public class ServerNotifier implements Runnable {
         outputStream.writeObject(getNewBoard());
         outputStream.flush();
       }
-      else {
-        throw new IOException();
-      }
 
     } catch(Exception e) {
-      System.out.println(Server.getTimeStamp() +
-          "Player has disconnected. Shutting down associated game server...");
       this.flagDisconnect();
     }
   }
@@ -111,8 +106,6 @@ public class ServerNotifier implements Runnable {
         this.sendBoard();
         Thread.sleep(50);
       }
-
-      this.outputStream.close();
 
     } catch (Exception e) {
       e.printStackTrace();

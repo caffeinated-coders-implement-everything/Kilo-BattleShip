@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.HashSet;
@@ -91,8 +90,9 @@ public class ClientNotifier implements Runnable {
       outputStream.writeObject(newShot);
       outputStream.flush();
 
-    } catch (Exception e) { }
-
+    } catch (Exception e) {
+      this.killProcess();
+    }
   }
 
   /**
@@ -103,7 +103,7 @@ public class ClientNotifier implements Runnable {
     try {
       while (this.getNewShot() == null && !this.getSocket().isInputShutdown()) { Thread.sleep(50); }
 
-      while (!this.isGameOver() && !this.getSocket().isInputShutdown()) {
+      while (!this.isGameOver() && !this.hasDisconnect()) {
         if (!shotCache.contains(getNewShot().getShotKey())) {
           this.sendShot();
           shotCache.add(getNewShot().getShotKey());
@@ -112,7 +112,6 @@ public class ClientNotifier implements Runnable {
       }
 
       this.outputStream.close();
-      this.flagDisconnect();
 
     } catch (Exception e) {
       e.printStackTrace();

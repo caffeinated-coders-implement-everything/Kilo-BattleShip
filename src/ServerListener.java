@@ -84,7 +84,7 @@ public class ServerListener implements Runnable {
   /**
    * flagDisconnect()
    */
-  private synchronized void flagDisconnect() {
+  synchronized void flagDisconnect() {
     hasDisconnect = true;
   }
 

@@ -49,6 +49,10 @@ public class ServerHandler implements Runnable {
     return connectionNum;
   }
 
+  synchronized void flagDisconnect() {
+    listener.flagDisconnect();
+  }
+
   /**
    * killStreams()
    */
@@ -177,9 +181,9 @@ public class ServerHandler implements Runnable {
         this.flagGameOver();
       }
 
-      this.killStreams();
+      Thread.sleep(5000);
 
-      Thread.sleep(10000);
+      this.killStreams();
 
       System.out.println(Server.getTimeStamp() + "Player #" + connectionNum() + " disconnecting...");
 
