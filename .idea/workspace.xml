@@ -271,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="edu.ucdenver.csci3800.fall2018.kilobattleship.Client" />
       <module name="Kilo-BattleShip" />
